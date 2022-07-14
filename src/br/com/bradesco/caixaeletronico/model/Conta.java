@@ -4,6 +4,7 @@ public class Conta {
 
     private int numeroDaConta;
     private double saldo;
+    private String chavePix;
 
     // cria o construtor abaixo, ou modifica a linha acima para "private double saldo = 0;"
     public Conta() {
@@ -24,11 +25,19 @@ public class Conta {
         return saldo;
     }
 
+    public String getChavePix() {
+        return chavePix;
+    }
+
+    public void setChavePix(String chavePix) {
+        this.chavePix = chavePix;
+    }
+
     public void adicionaSaldo(double valorASerAdicionado) {
         saldo = saldo + valorASerAdicionado;
     }
 
-    public boolean retirarSaldo (double valorASerRetirado){
+    public boolean retirarSaldo(double valorASerRetirado) {
         if (saldo >= valorASerRetirado) {
             saldo = saldo - valorASerRetirado;
             return true;

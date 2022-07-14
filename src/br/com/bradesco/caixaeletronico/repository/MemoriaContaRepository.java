@@ -5,9 +5,9 @@ import br.com.bradesco.caixaeletronico.model.Conta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MemoriaContaRepository implements BaseRepository <Conta> {
+public class MemoriaContaRepository implements BaseRepository<Conta> {
 
-    private List <Conta> contas = new ArrayList<>();
+    private List<Conta> contas = new ArrayList<>();
 
     @Override
     public List<Conta> findAll() {
